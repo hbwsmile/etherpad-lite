@@ -10,7 +10,7 @@ jobs:
     if: |
          (github.event_name != 'pull_request')
          || (github.event.pull_request.head.repo.id != github.event.pull_request.base.repo.id)
-    name: without plugins
+    name: Linux without plugins
     runs-on: ubuntu-latest
 
     steps:
@@ -40,7 +40,7 @@ jobs:
     if: |
          (github.event_name != 'pull_request')
          || (github.event.pull_request.head.repo.id != github.event.pull_request.base.repo.id)
-    name: with Plugins
+    name: Linux with Plugins
     runs-on: ubuntu-latest
 
     steps:
@@ -98,7 +98,7 @@ jobs:
     if: |
          (github.event_name != 'pull_request')
          || (github.event.pull_request.head.repo.id != github.event.pull_request.base.repo.id)
-    name: without plugins
+    name: Windows without plugins
     runs-on: windows-latest
 
     steps:
@@ -124,7 +124,7 @@ jobs:
     if: |
          (github.event_name != 'pull_request')
          || (github.event.pull_request.head.repo.id != github.event.pull_request.base.repo.id)
-    name: with Plugins
+    name: Windows with Plugins
     runs-on: windows-latest
 
     steps:
