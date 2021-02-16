@@ -115,8 +115,8 @@ jobs:
             npm ci
 
     # configures some settings and runs npm run test
-    - name: Run the backend tests
-      run: src/tests/frontend/travis/runnerBackend.sh
+    - name: Run Etherpad
+      run: node src\node\server.js
 
   withpluginsWindows:
     # run on pushes to any branch
